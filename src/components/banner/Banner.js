@@ -4,8 +4,9 @@ import carousel2 from "../../assets/img/carousel-2.jpg";
 import carousel3 from "../../assets/img/carousel-3.jpg";
 import offerImage1 from "../../assets/img/offer-1.jpg";
 import offerImage2 from "../../assets/img/offer-2.jpg";
+import { Link } from 'react-router-dom';
 
-const HeroSection = () => {
+const Banner = () => {
   return (
     <div className="container-fluid mb-3">
     <div className="row px-xl-5">
@@ -43,12 +44,12 @@ const HeroSection = () => {
                     Lorem rebum magna amet lorem magna erat diam stet. Sadips duo
                     stet amet amet ndiam elitr ipsum diam
                   </p>
-                  <a
+                  <Link
                     className="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-                    href="#"
+                   to={'/shop'}
                   >
                     Shop Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -70,12 +71,12 @@ const HeroSection = () => {
                     Lorem rebum magna amet lorem magna erat diam stet. Sadips duo
                     stet amet amet ndiam elitr ipsum diam
                   </p>
-                  <a
+                  <Link
                     className="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-                    href="#"
+                    to={'/shop'}
                   >
                     Shop Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -97,12 +98,12 @@ const HeroSection = () => {
                     Lorem rebum magna amet lorem magna erat diam stet. Sadips duo
                     stet amet amet ndiam elitr ipsum diam
                   </p>
-                  <a
+                  <Link
                     className="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-                    href="#"
+                    to={'/shop'}
                   >
                     Shop Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -115,9 +116,9 @@ const HeroSection = () => {
           <div className="offer-text">
             <h6 className="text-white text-uppercase">Save 20%</h6>
             <h3 className="text-white mb-3">Special Offer</h3>
-            <a href="" className="btn btn-primary">
+            <Link  to={'/shop'} className="btn btn-primary">
               Shop Now
-            </a>
+            </Link>
           </div>
         </div>
         <div className="product-offer mb-30" style={{ height: 200 }}>
@@ -137,4 +138,4 @@ const HeroSection = () => {
   )
 }
 
-export default HeroSection
+export default Banner

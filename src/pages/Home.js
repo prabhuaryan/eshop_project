@@ -1,17 +1,17 @@
 import React from "react";
-import Category from "../components/category/Category";
 import Products from "../components/products/Products";
 import Featured from "../components/featured/Featured";
 import Offer from "../components/offer/Offer";
 import Vendor from "../components/vendor/Vendor";
-import HeroSection from "../components/herosection/HeroSection";
+import Banner from "../components/banner/Banner";
+import Categories from "../components/category/Categories";
 
 const Home = () => {
   return (
     <>
-      <HeroSection />
+      <Banner />
       <Featured />
-      <Category />
+      <Categories/>
       <Offer />
       <Products />
       <Vendor />

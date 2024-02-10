@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
 import PageNotFound from "./pages/PageNotFound";
+import Products from "./components/products/Products";
 
 function App() {
   return (
